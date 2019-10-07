@@ -1,0 +1,17 @@
+nav ul {
+    list-style: none;
+}
+
+#nav-left-side{
+    float: left;
+}
+
+#nav-right-rise{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
