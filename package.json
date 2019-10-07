@@ -1,0 +1,22 @@
+{
+  "name": "kenary-frontend",
+  "version": "1.0.0",
+  "description": "Kenary project For Software Ing",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SIUUUUU/Kenary-FrontEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SIUUUUU/Kenary-FrontEnd/issues"
+  },
+  "homepage": "https://github.com/SIUUUUU/Kenary-FrontEnd#readme",
+  "dependencies": {
+    "tailwindcss": "^1.1.2"
+  }
+}
