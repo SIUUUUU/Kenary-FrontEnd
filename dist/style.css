@@ -3816,6 +3816,9 @@ video {
 .h-screen {
   height: 100vh;
 }
+.h-screen-80 {
+  height: 80vh;
+}
 
 .leading-none {
   line-height: 1;
