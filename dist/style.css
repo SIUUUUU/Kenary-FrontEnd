@@ -54310,4 +54310,11 @@ video {
   .xl\:z-auto {
     z-index: auto;
   }
+  .btn-update{
+    background-color: #f0ad4e;
+  }
+  .btn-update:hover{
+    background-color: #c05621;
+    cursor: pointer;
+  }
 }
