@@ -54353,4 +54353,10 @@ video {
   .font-subtitle{
     font-size: 1.5rem;
   }
+  .elements-nav:hover{
+    background-color: #fff;
+    color: #F54336;;
+    
+
+  }
 }
