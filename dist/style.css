@@ -3819,7 +3819,18 @@ video {
 .h-screen-80 {
   height: 80vh;
 }
-
+.h-screen-85 {
+  height: 85vh;
+}
+.h-screen-20 {
+  height: 20vh;
+}
+.h-screen-30 {
+  height: 30vh;
+}
+.h-screen-15 {
+  height: 15vh;
+}
 .leading-none {
   line-height: 1;
 }
@@ -9697,6 +9708,9 @@ video {
 
 .shadow-outline {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+.shadow-down {
+  box-shadow: 0 0 0.8rem 0 rgba(0,0,0,0.16);
 }
 
 .shadow-none {
@@ -54316,5 +54330,27 @@ video {
   .btn-update:hover{
     background-color: #c05621;
     cursor: pointer;
+  }
+  .herencia{
+    width: inherit;
+    height: inherit;
+  }
+  .roboto-mono{
+    font-family: 'Roboto Mono', monospace;
+  }
+  .roboto{
+    font-family: 'Roboto', sans-serif;
+  }
+  .roboto-condensed{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .montserrat{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .font-title{
+    font-size: 5rem;
+  }
+  .font-subtitle{
+    font-size: 1.5rem;
   }
 }
