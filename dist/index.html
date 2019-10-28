@@ -10,18 +10,18 @@
   <link rel="stylesheet" type="text/css" href="assets/css/normalize/normalize.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="../assets/css/colors.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Roboto+Condensed|Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.css">
   <title>Kenary</title>
 </head>
 
 <body>
-  <nav class="flex items-center justify-between flex-wrap bg-gray-800 h-screen-15 p-5 red shadow-xl">
-    <div class="flex items-center flex-shrink-0 text-white mr-6">
+  <nav class="flex items-center justify-between flex-wrap bg-gray-800  red shadow-xl">
+    <div class="flex items-center flex-shrink-0 text-white mr-6 m-1">
       <span class="font-bold text-xl">Kenary</span>
     </div>
 
     <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto roboto font-white">
-      <div class="text-sm sm:flex-grow ">
+      <div class="text-sm sm:flex-grow justify-between ">
         <a href="#" class="block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4 p-5 elements-nav">
           Inicio
         </a>
@@ -35,7 +35,7 @@
           Vision
         </a>
       </div>
-      <div>
+      <div class="m-1 flex flex-row">
         <a href="login.html"
           class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white elements-nav hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Iniciar
           Sesion</a>
@@ -46,20 +46,29 @@
   </nav>
   <section id="title" class="w-full h-screen-85 red shadow-down">
     <div class="herencia flex flex-col items-center justify-center">
-        <span class="roboto-condensed font-white font-title">Kenary</span>
-        <span class="font-white-10 font-subtitle roboto ">¡La mejor herramienta para tu estudio!</span>
+      <span class="roboto-condensed font-white font-title">Kenary</span>
+      <span class="font-white-10 font-subtitle roboto ">¡La mejor herramienta para tu estudio!</span>
     </div>
   </section>
   <section id="about" class="w-full h-screen white flex flex-row justify-center items-center">
-    <div>
-      <i>Icono</i>
+    <div class="mini-boxes flex justify-center items-center">
+      <i class="fas fa-glasses"></i>
     </div>
-    <div>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti explicabo, eos eligendi veniam, ratione omnis nam, qui quod odio eum harum? Optio, numquam ad illum eos rerum voluptatem voluptas fuga?
+    <div class="mini-boxes flex items-center">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti explicabo, eos eligendi veniam, ratione
+        omnis nam, qui quod odio eum harum? Optio, numquam ad illum eos rerum voluptatem voluptas fuga?
       </p>
     </div>
   </section>
-  <section id="mision" class="w-full h-screen section-gray ">
+  <section id="mision" class="w-full h-screen section-gray flex flex-row justify-center items-center ">
+    <div class="mini-boxes flex items-center">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti explicabo, eos eligendi veniam, ratione
+        omnis nam, qui quod odio eum harum? Optio, numquam ad illum eos rerum voluptatem voluptas fuga?
+      </p>
+    </div>
+    <div class="mini-boxes flex justify-center items-center">
+      <i class="fas fa-glasses"></i>
+    </div>
 
   </section>
   <section id="vison" class="w-full h-screen white ">
@@ -68,7 +77,7 @@
   <footer class="gray-fo h-screen-30">
 
   </footer>
-  
+
 </body>
 
 </html>

@@ -7,55 +7,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="assets/img/icon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.css">
 
     <title>Login</title>
 </head>
 
 <body class="bg-gray-900">
-    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-bold text-xl">Kenary</span>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800  red shadow-xl">
+        <div class="flex items-center flex-shrink-0 text-white mr-6 m-1">
+            <a href="index.html" class="block mt-4 sm:inline-block sm:mt-0 mr-4 p-5">[Logo de Casita]</a>
         </div>
 
-        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
-            <div class="text-sm sm:flex-grow">
-                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
-                    Inicio
-                </a>
-                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
-                    Acerca De
-                </a>
-                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
-                    Mision
-                </a>
-                <a href="#" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white">
-                    Vision
-                </a>
+        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto roboto font-white">
+            <div class="text-sm sm:flex-grow justify-between ">
             </div>
-            <div>
-                <a href="login.html"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Iniciar
-                    Sesion</a>
+            <div class="m-1 flex flex-row">
                 <a href="register.html"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Registrarse</a>
+                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white elements-nav hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Registrarse</a>
             </div>
         </div>
     </nav>
 
-    <div class="w-full h-screen-80 flex items-center justify-center flex-wrap">
+    <div class="w-full h-screen-80 flex items-center justify-center flex flex-col section-gray">
 
-        <div class="w-1/8 h-1/2 p-3 bg-white rounded shadow-xl">
-            <form class="flex flex-col" action="#" method="POST">
-                <input class="placeholder-gray-900 p-2 m-2 fas fa-user" type="text" name="username" id="username"
+        <div class="w-25 h-1/2 p-3 white rounded shadow-xl b-up-rounded">
+            <form class="flex flex-col items-center" action="#" method="POST">
+                <img class="w-25" src="../assets/img/icon.png" alt="">
+                <input class="placeholder-gray-900 p-2 m-2 fas fa-user w-full" type="text" name="username" id="username"
                     placeholder="Usuario">
-                <input class="placeholder-gray-900 p-2 m-2" type="password" name="password" id="password"
+                <input class="placeholder-gray-900 p-2 m-2 w-full" type="password" name="password" id="password"
                     placeholder="Contraseña">
-                <input class="bg-gray-900 text-white p-2 m-2" type="submit" value="Iniciar Sesion" name="logIn"
-                    id="logIn">
-                <span class="p-2 m-2 text-center">Si no tienes cuenta puedes <a class=""
+
+                <span class="p-2 m-2 text-center text-xs">Si no tienes cuenta puedes <a class="font-gray"
                         href="register.html">registrarte aqui</a> </span>
             </form>
         </div>
+        <div class="w-25 white">
+                <input class="green text-white p-2 w-full b-down-rounded btn-login" type="submit" value="Iniciar Sesion" name="logIn"
+                    id="logIn">
+
+            </div>
     </div>
 </body>
 

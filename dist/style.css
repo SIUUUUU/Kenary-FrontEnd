@@ -54359,4 +54359,22 @@ video {
     
 
   }
+  .mini-boxes{
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+  }
+  .w-25{
+    width: 25%;
+  }
+  .b-down-rounded{
+    border-radius: 0px 0px 0.75rem 0.75rem;
+  }
+  .b-up-rounded{
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+  }
+  .btn-login:hover{
+    background-color: rgb(6, 94, 43);
+    cursor:pointer;
+  }
 }
