@@ -1,0 +1,53 @@
+@media only screen and (max-width: 760px){
+    .menu a:hover{
+        background-color: #fff;
+        color:#F54336;
+    }
+
+    .menu a{
+        text-align: center;
+    }
+
+    .options {   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        
+    }
+
+    .login{
+        margin-right: 30px;
+    }
+
+    .sect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   
+    .about{
+        display: flex;
+        flex-wrap: wrap;;
+    }
+
+
+    .mision{
+        display: flex;
+        flex-wrap: wrap;;
+    }
+
+    .vision{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .final{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+}
