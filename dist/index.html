@@ -9,6 +9,10 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/normalize/normalize.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/colos.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="../assets/css/colors.css">
   <link rel="stylesheet" href="../assets/css/fontawesome/fontawesome.css">
@@ -16,39 +20,32 @@
 </head>
 
 <body>
-  <nav class="menu flex items-center justify-between flex-wrap bg-gray-800  red shadow-xl">
-    <div class="title flex items-center flex-shrink-0 text-white mr-6 m-1">
-      <span class="font-bold text-xl p-3">Kenary</span>
-    </div>
+  <section class="vh-100 w-100">
+    <div class="w-100 v-100 position-relative">
+      <div class="position-relative w-100 d-flex justify-content-center vh-100 align-items-center back-login3">
+        <div class="position-absolute h-100 w-100 tela"></div>
+        <div class="position-absolute h-100 w-100 tela2"></div>
+        <div class="w-100 h-100 position-relative index-5 home-wraper">
 
-    <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto roboto font-white">
-      <div class="text-sm sm:flex-grow justify-between ">
-        <a href="#" class="block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4 p-5 elements-nav">
-          Inicio
-        </a>
-        <a href="#" class="block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4 p-5 elements-nav">
-          Acerca De
-        </a>
-        <a href="#" class="block mt-4 sm:inline-block sm:mt-0 hover:text-white mr-4 p-5 elements-nav">
-          Mision
-        </a>
-        <a href="#" class="block mt-4 sm:inline-block sm:mt-0 hover:white p-5 elements-nav">
-          Vision
-        </a>
+
+          <nav class="w-100 d-flex flex-row justify-content-between nav">
+            <div class="d-flex w-75">
+              <span class="btn-nav text-white">Home</span>
+              <div class="btn-nav mr-2"><a href="#about" class="text-white">Acerca de</a></div>
+              <div class="btn-nav mr-2"><a href="#mision" class="text-white">Mision</a></div>
+              <div class="btn-nav mr-2"><a href="#vision" class="text-white">Vision</a></div>
+            </div>
+            <div class="w-25 d-flex align-items-center">
+                <div class="btn-nav w-50 mr-2 btn-dark"><a href="login.html" class="text-white">Iniciar Sesion</a></div>
+                <div class="btn-nav w-50 mr-2 btn-dark"><a href="register.html" class="text-white">Registrarse</a></div>
+            </div>
+          </nav>
+          <div class="center d-flex justify-content-center align-items-center">
+            <h1 class="text-white">¡Bienvenido a Kenary!</h1>
+          </div>
+        </div>
       </div>
-      <div class="options m-1 flex flex-row">
-        <a href="login.html"
-          class="login inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white elements-nav hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Iniciar
-          Sesion</a>
-        <a href="register.html"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white elements-nav hover:text-blue-500 hover:bg-white mt-4 md:mt-0">Registrarse</a>
-      </div>
-    </div>
-  </nav>
-  <section id="title" class="sect w-full  h-screen-85 red shadow-down">
-    <div class="main herencia flex flex-col  items-center justify-center">
-      <span class="roboto-condensed font-white font-title">Kenary</span>
-      <span class="font-white-10 font-subtitle roboto ">¡La mejor herramienta para tu estudio!</span>
+
     </div>
   </section>
   <section id="about" class="about w-full h-screen white flex flex-row justify-center items-center">
