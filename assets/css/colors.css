@@ -46,3 +46,17 @@
 .font-gray{
     color: #666;
 }
+.dash-back-input{
+    background-color: #43485b;
+    border: none;
+    color: #fff;
+}
+.dash-back{
+    background-color: #12161f;
+}
+.dash-item-back{
+    background-color: #2e3442;
+}
+.fullname{
+    color: #fff;
+}
