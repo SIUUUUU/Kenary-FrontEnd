@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+}
+
 nav ul {
     list-style: none;
 }
@@ -14,4 +18,34 @@ nav ul li{
     display: inline-block;
     margin-left: 1vw;
     margin-right: 1vw;
+}
+.back-login{
+    background: url("../img/background.jpg") no-repeat center/cover;
+}
+.back-login2{
+    background: url("../img/back2.jpg") no-repeat center/cover;
+}
+.tela{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #F54336;
+    opacity: 0.50 ;
+    z-index: 0;
+}
+.tela2{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.45 ;
+    z-index: 1;
+}
+.index-5{
+    z-index: 5;
+}
+.title-log{
+    font-size: 1.5rem;
 }
