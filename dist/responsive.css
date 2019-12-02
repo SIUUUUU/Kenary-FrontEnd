@@ -1,25 +1,30 @@
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 560px){
+    .options div:hover{
+        background-color:#000;
+    }
+ 
     .menu a:hover{
-        background-color: #fff;
-        color:#F54336;
+        text-decoration: none;
     }
 
     .menu a{
-        text-align: center;
+        width:fit-content;
+        text-align: center;  
+        padding: 10px;
+
     }
 
-    .options {   
+    .flex-container {
+        width: 100%;
         display: flex;
-        align-items: center;
         justify-content: center;
-        padding: 15px;
+        align-content: center;
+        align-items: center;
+        margin: 20px;
+        margin-left: 200px;
         
-    }
-
-    .login{
-        margin-right: 30px;
-    }
-
+      }
+   
     .sect {
         display: flex;
         align-items: center;
@@ -49,5 +54,25 @@
         justify-content: center;
     }
 
+    /* RESPONSIVE LOG IN */
+
+    .welcome{
+        margin-top: 300px;
+    }
+
+    .formu{
+        padding: 10px;
+    }
+
+    /* RESPONSIVE REGISTER */
     
+    .formu-register {
+        margin-top: 300px;
+    
+    }
+
+    
+
+    
+
 }

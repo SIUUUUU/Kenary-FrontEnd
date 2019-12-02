@@ -82,9 +82,11 @@ nav ul li{
     font-size: 1.5rem;
 }.head{
     grid-area: head;
+    font-size: 1.8vh;
 }
 .profile{
     grid-area: profile;
+    font-size: 1.8vh;
 }
 .space{
     grid-area: spaces;
