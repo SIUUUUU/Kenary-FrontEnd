@@ -19,49 +19,49 @@
                 <div class="position-absolute h-100 w-100 tela2"></div>
                 <div class="container w-100 position-relative index-5">
                     <div class="row">
-                        <form class="formu-register p-4 col-sm-4 bg-white rounded" action="">
+                        <div class="formu-register p-4 col-sm-4 bg-white rounded" action="">
                             <h3 align="center">Registrate</h3>
                             <div class="form-row">
                                 <input type="text" class="form-control col m-1" id="name" placeholder="Nombre">
                                 <input type="text" class="form-control col m-1" id="lastname" placeholder="Apellido">
                             </div>
                             <div class="form-row">
-                                <input type="text" class="form-control col m-1" placeholder="Usuario">
+                                <input type="text" class="form-control col m-1" id="username" placeholder="Usuario">
                             </div>
                             <div class="form-row">
-                                <input type="password" class="form-control col m-1" id="name" placeholder="Contraseña">
-                                <input type="password" class="form-control col m-1" id="lastname"
+                                <input type="password" class="form-control col m-1" id="pass" placeholder="Contraseña">
+                                <input type="password" class="form-control col m-1" id="repass"
                                     placeholder="Confirm Contraseña">
                             </div>
                             <div class="form-row">
-                                <input type="date" class="form-control col m-1" placeholder="Fecha de Nacimiento">
+                                <input type="date" class="form-control col m-1" id="date" placeholder="Fecha de Nacimiento">
                             </div>
                             <div class="form-row">
-                                <select class="custom-select col m-1">
+                                <select id="gender" class="custom-select col m-1">
                                     <option selected>Genero</option>
-                                    <option value="m">Masculino</option>
-                                    <option value="f">Femenino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
                                 </select>
                             </div>
                             <div class="form-row">
-                                    <input type="text" class="form-control col m-1" id="name" placeholder="Titulo">
-                                    <input type="text" class="form-control col m-1" id="lastname" placeholder="Grado">
+                                    <input type="text" class="form-control col m-1" id="career" placeholder="Titulo">
+                                    <input type="text" class="form-control col m-1" id="grade" placeholder="Grado">
                             </div>
                             <div class="form-row">
-                                    <select class="custom-select col m-1">
+                                    <select id="type" class="custom-select col m-1">
                                         <option selected>Seleccione una opcion</option>
-                                        <option value="m">Tutor</option>
-                                        <option value="f">Estudiante</option>
+                                        <option value="Tutor">Tutor</option>
+                                        <option value="Estudiante">Estudiante</option>
                                     </select>
                                 </div>
                             <div class="form-group d-flex justify-content-center">
                                 <span>¿Ya tienes cuenta? </span> <a href="login.html"> ¡Inicia Sesion Ahora!</a>
                             </div>
                             <div class="form-group d-flex justify-content-center">
-                                <input type="submit" class="btn btn-primary" value="Registrarse">
+                                <button type="submit" class="btn btn-primary" onclick="register()">Registrarse</button>
                             </div>
 
-                        </form>
+                        </div>
                         <div class="col-sm-8 text-center d-flex flex-column justify-content-center">
                             <span class="text-white title-log">Bienvenidos a la plataforma de Kenary</span>
                             <p align="justify" class="p-5 text-white">Lorem ipsum dolor sit, amet consectetur
@@ -79,7 +79,8 @@
 
         </div>
     </section>
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

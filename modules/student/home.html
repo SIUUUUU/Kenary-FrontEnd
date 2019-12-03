@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="../../assets/css/colors.css">
     <link rel="stylesheet" href="../../assets/css/fontawesome/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
-
+    <script>
+            var session = window.localStorage.getItem("student");
+            if (session == null || session == "null"){
+                window.location= "../../dist/login.html";
+            }
+        </script>
     <title>Home</title>
 </head>
 <body class="dash-back">
@@ -25,7 +30,7 @@
                 </select>
             </div>
             <div class="pr-3">
-                <a class="text-white" href=""><i class="fas fa-sign-out-alt icon"></i></a>
+                <a class="text-white" id="logOut"><i class="fas fa-sign-out-alt icon"></i></a>
             </div>
         </div>
 
@@ -38,11 +43,11 @@
                 </div>
                 <div class="radius-1 w-100 dash-item-back d-flex flex-row align-items-center p-3 mt-2">
                         <i class="far fa-plus-square text-white icon pl-1"></i>
-                        <a class="text-white pl-2 montserrat" href="">Creae Sesiones</a>
+                        <a class="text-white pl-2 montserrat" href="">Crear Sesiones</a>
                     </div>
                 <div class="radius-1 w-100 dash-item-back d-flex flex-row align-items-center p-3 mt-2">
                     <i class="fas fa-cog text-white icon pl-1"></i>
-                    <a class="text-white pl-2 montserrat" href="">Configuración</a>
+                    <a class="text-white pl-2 montserrat">Configuración</a>
                 </div>
             </div>
 
@@ -50,6 +55,7 @@
         <div class="radius-1 space dash-item-back">
         
         </div>
-    </div>    
+    </div>
+    <script src="../../assets/js/extras.js"></script>   
 </body>
 </html>
