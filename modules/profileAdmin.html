@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="../assets/css/fontawesome/css/all.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Perfil</title>
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }   
+    </script>
 </head>
 
 <body>
@@ -71,7 +79,7 @@
     </form>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-        var id = window.localStorage.getItem("idUpdate");
+        var id = getParameterByName("idS");
         document.getElementById("id").value = id;
         axios.get('http://localhost:8080/user/' + id)
             .then(function (response) {
@@ -93,7 +101,6 @@
                 console.log(document.getElementById("type").value);
             });        
     </script>
-    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

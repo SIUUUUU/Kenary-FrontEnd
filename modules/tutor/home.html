@@ -53,7 +53,7 @@
             </div>
             <div class="radius-1 w-100 dash-item-back d-flex flex-row align-items-center p-3 mt-2">
                 <i class="fas fa-cog text-white icon pl-1"></i>
-                <a class="text-white pl-2 montserrat" href="">Configuración</a>
+                <a class="text-white pl-2 montserrat" onclick="gotoUpdate()">Configuración</a>
             </div>
         </div>
 
@@ -62,7 +62,13 @@
 
         </div>
     </div>
-    
+    <script src="../../assets/js/extras.js"></script>  
+    <script>
+        function gotoUpdate() {
+            window.localStorage.setItem("idUpdate", session);
+            window.location = "../../modules/profile.html";
+        }
+    </script>
 </body>
 
 </html>
