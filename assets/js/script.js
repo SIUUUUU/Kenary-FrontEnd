@@ -67,6 +67,48 @@ function register(){
 	}
 }
 
+function updateUser(){
+	id = document.getElementById("id").value;
+	name = document.getElementById("name").value;
+	lastname = document.getElementById("lastname").value;
+	username = document.getElementById("username").value;
+	pass = document.getElementById("pass").value;
+	repass = document.getElementById("repass").value;
+	name = document.getElementById("name").value;
+	date = document.getElementById("date").value;
+	gender = document.getElementById("gender").value;
+	grade = document.getElementById("grade").value;
+	type = document.getElementById("type").value;
+	career = document.getElementById("career").value;
+	if(pass == repass){
+		axios.put('http://localhost:8080/user/'+id,{
+		"uPhoto": "mifoto.png",
+		"uFirstName": name,
+		"uLastName": lastname,
+		"uUsername": username,
+		"uPassword": pass,
+		"uBirthday": date,
+		"uCountry": "El Salvador",
+		"uInstitution": "UCA",
+		"uGender": gender,
+		"uDegree": grade,
+		"uType": type,
+		"uCareer": career
+	})
+	.then(function(response){
+		consolse.log(response);
+	})
+	.catch(function(error){
+		console.log(error);
+	})
+	.then(function(){
+		window.location = "login.html";
+	});
+	}else{
+		alert("Las contraseñas no Coinciden");
+	}
+}
+
 function getAllUsers(){
 	var div = document.getElementById('userTable');
 	var table = document.createElement('table');

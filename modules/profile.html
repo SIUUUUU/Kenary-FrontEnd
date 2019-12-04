@@ -6,54 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>Perfil</title>
 </head>
 
 <body>
-    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <span class="font-bold text-xl">Kenary</span>
+    <div class="head d-flex justify-content-between align-items-center dash-item-back">
+        <div class="text-center">
+            <span class="text-white pl-3 roboto">[ Kenary ]</span>
         </div>
-
-        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
-            <div class="text-sm sm:flex-grow">
-                
-            </div>
-            <div>
-                <span href="#"
-                    class="inline-block text-sm px-4 py-2 leading-none  text-white hover:border-transparent mt-4 md:mt-0">
-                    <i></i>
-                    [Usuario en Sesion]
-                </span>
-                <a href="#"
-                    class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 md:mt-0">
-                    Cerrar Sesion</a>
-            </div>
+        <div class="form-row">
+            <input type="text" value="Actualizar Informacion" class="form-control m-1 col dash-back-input" id="name" placeholder="Buscar" disabled>
         </div>
-    </nav>
+        <div class="pr-3">
+            <a class="text-white" id="logOut"><i class="fas fa-sign-out-alt icon"></i></a>
+        </div>
+    </div>
     <form action="#" method="POST" class="w-full h-screen-80 flex items-center justify-center flex-wrap">
-        <div class="w-1/8 h-1/2 m-2 p-3 bg-white rounded shadow-xl">
-            <div class="flex justify-center content-center">
-                <img src="../assets/img/profile.png" style="width: 35%;" alt="#">
+        <div class="formu-register p-4 col-sm-4 bg-white rounded" action="">
+            <h3 align="center">Registrate</h3>
+            <div class="form-row">
+                <input type="text" class="form-control col m-1" id="name" placeholder="Nombre">
+                <input type="text" class="form-control col m-1" id="lastname" placeholder="Apellido">
             </div>
-            <div class="flex justify-center content-center">
-                <input class="p-2 m-2" type="text" style="width: 50%;" name="" placeholder="Nombre" id="">
-                <input class="p-2 m-2" type="text" style="width: 50%;" name="" placeholder="Apellido" id="">
+            <div class="form-row">
+                <input type="text" class="form-control col m-1" id="username" placeholder="Usuario">
             </div>
-            <div class="flex justify-center content-center">
-                <input class="p-2 m-2"type="text"  style="width: 100%;" placeholder="Usuario">
+            <div class="form-row">
+                <input type="password" minlength="8" class="form-control col m-1" id="pass" placeholder="Contraseña">
+                <input type="password" minlength="8" class="form-control col m-1" id="repass"
+                    placeholder="Confirm Contraseña">
             </div>
-            <div class="flex justify-center content-center">
-                <input class="p-2 m-2" type="password" style="width: 50%;" name="" placeholder="Contraseña" id="">
-                <input class="p-2 m-2" type="password" style="width: 50%;" name="" placeholder="Confirmar Contraseña" id="">
+            <div class="form-row">
+                <input type="date" class="form-control col m-1" id="date" placeholder="Fecha de Nacimiento">
             </div>
-            <div>
-                <label for="tutor" class="text-gray-500" style="width: 45%;">Tutor Asignado</label>
-                <input class="p-2 m-2" type="text" style="width: 55%;" placeholder="Tutor" name="tutor" id="tutor">
+            <div class="form-row">
+                <select id="gender" class="custom-select col m-1" disabled>
+                    <option selected>Genero</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
             </div>
-            <div class="flex justify-center content-center m-2">
-                <input type="submit" value="Modificar" class="p-2 btn-update rounded text-white hover:" style="width: 100%;">
+            <div class="form-row">
+                    <input type="text" class="form-control col m-1" id="career" placeholder="Titulo" disabled >
+                    <input type="text" class="form-control col m-1" id="grade" placeholder="Grado" disabled>
             </div>
+            <div class="form-row">
+                    <select id="type" class="custom-select col m-1" disabled>
+                        <option selected>Seleccione una opcion</option>
+                        <option value="Tutor">Tutor</option>
+                        <option value="Estudiante">Estudiante</option>
+                    </select>
+                </div>
+            <div class="form-group d-flex justify-content-center">
+                <button type="submit" class="btn btn-dark" onclick="update()">Actualizar Información</button>
+            </div>
+
         </div>
     </form>
 </body>
